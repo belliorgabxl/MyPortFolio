@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React, { useState, useEffect, forwardRef, InputHTMLAttributes } from 'react';
 import classNames from 'classnames';
@@ -9,8 +9,7 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
     id: string;
     label: string;
     height?: 's' | 'm';
-    error?: React.ReactNode;
-    description?: React.ReactNode;
+    error?: string;
     radius?: string;
     className?: string;
     hasPrefix?: React.ReactNode;
@@ -23,7 +22,6 @@ const Input = forwardRef<HTMLInputElement, InputProps>(({
     label,
     height = 'm',
     error,
-    description,
     radius,
     className,
     hasPrefix,
@@ -93,7 +91,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(({
                             as="label"
                             variant="label-default-m"
                             htmlFor={id}
-                            className={classNames(styles.label, styles.inputLabel, {
+                            className={classNames(styles.label, {
                                 [styles.floating]: isFocused || isFilled,
                             })}>
                             {label}
@@ -121,17 +119,6 @@ const Input = forwardRef<HTMLInputElement, InputProps>(({
                         variant="body-default-s"
                         onBackground="danger-weak">
                         {error}
-                    </Text>
-                </Flex>
-            )}
-            { description && (
-                <Flex paddingX="16">
-                    <Text
-                        as="span"
-                        id={`${id}-description`}
-                        variant="body-default-s"
-                        onBackground="neutral-weak">
-                        {description}
                     </Text>
                 </Flex>
             )}

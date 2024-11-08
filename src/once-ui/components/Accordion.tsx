@@ -1,9 +1,7 @@
-'use client';
+"use client";
 
 import React, { useState, useEffect, forwardRef, useImperativeHandle, useRef } from 'react';
 import { Flex, Icon, Heading } from '.';
-import styles from './Accordion.module.scss';
-import classNames from 'classnames';
 
 interface AccordionProps {
     title: React.ReactNode;
@@ -21,42 +19,24 @@ const Accordion: React.FC<AccordionProps> = forwardRef(({
     open = false
 }, ref) => {
     const [isOpen, setIsOpen] = useState(open);
-    const [maxHeight, setMaxHeight] = useState('0px');
-    const [isVisible, setIsVisible] = useState(open);
+    const [maxHeight, setMaxHeight] = useState(open ? 'none' : '0px');
     const contentRef = useRef<HTMLDivElement>(null);
-    const innerContentRef = useRef<HTMLDivElement>(null);
-
-    const calculateMaxHeight = () => {
-        if (innerContentRef.current) {
-            const contentHeight = innerContentRef.current.scrollHeight;
-            const paddingTop = parseFloat(window.getComputedStyle(innerContentRef.current).paddingTop);
-            const paddingBottom = parseFloat(window.getComputedStyle(innerContentRef.current).paddingBottom);
-            
-            const totalHeight = contentHeight + paddingTop + paddingBottom;
-            return `${totalHeight}px`;
-        }
-        return '0px';
-    };
 
     useEffect(() => {
-        if (contentRef.current) {
-            setMaxHeight(open ? calculateMaxHeight() : '0px');
-            if (open) {
-                setIsVisible(true);
-            }
+        if (open) {
+            setIsOpen(true);
+            setMaxHeight(`${contentRef.current?.scrollHeight}px`);
+        } else {
+            setIsOpen(false);
+            setMaxHeight('0px');
         }
     }, [open]);
 
     const toggleAccordion = () => {
         if (isOpen) {
-            setMaxHeight(`${contentRef.current?.scrollHeight}px`);
-            setTimeout(() => setMaxHeight('0px'), 10);
-        } else {
             setMaxHeight('0px');
-            setTimeout(() => {
-                setMaxHeight(calculateMaxHeight());
-                setIsVisible(true);
-            }, 10);
+        } else {
+            setMaxHeight(`${contentRef.current?.scrollHeight}px`);
         }
         setIsOpen(!isOpen);
     };
@@ -65,8 +45,7 @@ const Accordion: React.FC<AccordionProps> = forwardRef(({
         toggle: toggleAccordion,
         open: () => {
             setIsOpen(true);
-            setMaxHeight(calculateMaxHeight());
-            setIsVisible(true);
+            setMaxHeight(`${contentRef.current?.scrollHeight}px`);
         },
         close: () => {
             setIsOpen(false);
@@ -76,8 +55,8 @@ const Accordion: React.FC<AccordionProps> = forwardRef(({
 
     useEffect(() => {
         const handleTransitionEnd = () => {
-            if (!isOpen) {
-                setIsVisible(false);
+            if (isOpen) {
+                setMaxHeight('none');
             }
         };
 
@@ -98,13 +77,15 @@ const Accordion: React.FC<AccordionProps> = forwardRef(({
             fillWidth
             direction="column"
             style={style}
-            className={classNames(styles.border, className)}>
+            className={className}>
             <Flex 
-                tabIndex={0}
-                className={styles.accordion}
+                style={{ borderTop: "1px solid var(--neutral-border-medium)", cursor: 'pointer' }}
                 paddingY="16"
-                paddingLeft="m" paddingRight="m"
-                alignItems="center" justifyContent="space-between"
+                paddingLeft="m"
+                paddingRight="m"
+                alignItems="center"
+                justifyContent="space-between"
+                tabIndex={0}
                 onClick={toggleAccordion}
                 aria-expanded={isOpen}
                 aria-controls="accordion-content">
@@ -116,31 +97,29 @@ const Accordion: React.FC<AccordionProps> = forwardRef(({
                 <Icon
                     name="chevronDown"
                     size="m"
-                    style={{ display: 'flex', transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'var(--transition-micro-medium)' }} />
+                    style={{ display: 'flex', transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform var(--transition-duration-micro-medium)' }} />
             </Flex>
-            <Flex
+            <div
                 id="accordion-content"
                 ref={contentRef}
-                fillWidth
                 style={{
                     maxHeight,
                     overflow: 'hidden',
-                    transition: 'max-height var(--transition-duration-macro-long) var(--transition-eased)',
-                    visibility: isVisible ? 'visible' : 'hidden',
+                    transition: 'max-height var(--transition-duration-macro-long) var(--transition-timing-function)',
+                    visibility: isOpen ? 'visible' : 'hidden'
                 }}
                 aria-hidden={!isOpen}>
                 <Flex
-                    ref={innerContentRef}
-                    fillWidth
-                    paddingX="16" paddingTop="8" paddingBottom="16"
+                    paddingX="m"
+                    paddingBottom="32"
                     direction="column">
                     {children}
                 </Flex>
-            </Flex>
+            </div>
         </Flex>
     );
 });
 
-Accordion.displayName = 'Accordion';
+Accordion.displayName = "Accordion";
 
 export { Accordion };

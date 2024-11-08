@@ -1,4 +1,4 @@
-import { getPosts } from '@/app/utils/utils';
+import { getPosts } from '@/app/utils';
 import { Flex } from '@/once-ui/components';
 
 import { ProjectCard } from '@/components';
@@ -21,7 +21,7 @@ export function Projects({ range, locale }: ProjectsProps) {
 
     return (
         <Flex
-            fillWidth gap="xl" marginBottom="40" paddingX="l"
+            fillWidth gap="l" marginBottom="40" paddingX="l"
             direction="column">
             {displayedProjects.map((post) => (
                 <ProjectCard

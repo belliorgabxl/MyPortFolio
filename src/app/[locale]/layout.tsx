@@ -3,6 +3,7 @@ import "@/once-ui/tokens/index.scss";
 
 import classNames from 'classnames';
 
+import { Flex, Background } from '@/once-ui/components'
 import { Footer, Header, RouteGuard } from "@/components";
 import { baseURL, effects, style } from '@/app/resources'
 
@@ -12,9 +13,9 @@ import { Source_Code_Pro } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
+import { Metadata } from "next";
 import { routing } from "@/i18n/routing";
 import { renderContent } from "@/app/resources";
-import { Background, Flex } from "@/once-ui/components";
 
 export async function generateMetadata(
 	{ params: { locale }}: { params: { locale: string }}
@@ -110,10 +111,9 @@ export default async function RootLayout({
 					fillWidth margin="0" padding="0"
 					direction="column">
 					<Background
-						mask={effects.mask as any}
-						gradient={effects.gradient as any}
-						dots={effects.dots as any}
-						lines={effects.lines as any}/>
+						gradient={effects.gradient}
+						dots={effects.dots}
+						lines={effects.lines}/>
 					<Flex
 						fillWidth
 						minHeight="16">

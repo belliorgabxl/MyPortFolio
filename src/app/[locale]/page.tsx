@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Heading, Flex, Text, Button,  Avatar, RevealFx, Arrow } from '@/once-ui/components';
+import { Heading, Flex, Text, Button,  Avatar, RevealFx } from '@/once-ui/components';
 import { Projects } from '@/components/work/Projects';
 
 import { baseURL, routes, renderContent } from '@/app/resources'; 
@@ -81,47 +81,40 @@ export default function Home(
 					<Flex
 						direction="column"
 						fillWidth maxWidth="s" gap="m">
-						<RevealFx
-							translateY="4">
+						<RevealFx translateY="4">
 							<Heading
 								wrap="balance"
 								variant="display-strong-l">
 								{home.headline}
 							</Heading>
 						</RevealFx>
-						<RevealFx
-							translateY="8" delay={0.2}>
-							<Flex fillWidth>
-								<Text
-									wrap="balance"
-									onBackground="neutral-weak"
-									variant="heading-default-xl">
-									{home.subline}
-								</Text>
-							</Flex>
+						<RevealFx translateY="8" delay={0.2}>
+							<Text
+								wrap="balance"
+								onBackground="neutral-weak"
+								variant="body-default-l">
+								{home.subline}
+							</Text>
 						</RevealFx>
 						<RevealFx translateY="12" delay={0.4}>
-							<Flex fillWidth>
-								<Button
-									id="about"
-									data-border="rounded"
-									href={`/${locale}/about`}
-									variant="tertiary"
-									size="m">
-									<Flex
-										gap="8"
-										alignItems="center">
-										{about.avatar.display && (
-											<Avatar
-												style={{marginLeft: '-0.75rem', marginRight: '0.25rem'}}
-												src={person.avatar}
-												size="m"/>
-											)}
-											{t("about.title")}
-											<Arrow trigger="#about"/>
-									</Flex>
-								</Button>
-							</Flex>
+							<Button
+								data-border="rounded"
+								href={`/${locale}/about`}
+								variant="tertiary"
+								suffixIcon="chevronRight"
+								size="m">
+								<Flex
+									gap="8"
+									alignItems="center">
+									{about.avatar.display && (
+										<Avatar
+											style={{marginLeft: '-0.75rem', marginRight: '0.25rem'}}
+											src={person.avatar}
+											size="m"/>
+										)}
+										{t("about.title")}
+								</Flex>
+							</Button>
 						</RevealFx>
 					</Flex>
 				
@@ -130,20 +123,8 @@ export default function Home(
 				<Projects range={[1,1]} locale={locale}/>
 			</RevealFx>
 			{routes['/blog'] && (
-				<Flex
-					fillWidth gap="24"
-					mobileDirection="column">
-					<Flex flex={1} paddingLeft="l">
-						<Heading
-							as="h2"
-							variant="display-strong-xs"
-							wrap="balance">
-							Latest from the blog
-						</Heading>
-					</Flex>
-					<Flex flex={3} paddingX="20">
-						<Posts range={[1,2]} columns="2" locale={locale}/>
-					</Flex>
+				<Flex fillWidth paddingX="20">
+					<Posts range={[1,2]} columns="2" locale={locale}/>
 				</Flex>
 			)}
 			<Projects range={[2]} locale={locale}/>

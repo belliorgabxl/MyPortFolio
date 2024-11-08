@@ -1,7 +1,8 @@
 "use client";
 
 import { mailchimp } from '@/app/resources'
-import { Button, Flex, Heading, Input, Text, Background } from '@/once-ui/components';
+import { Button, Flex, Heading, Input, Text } from '@/once-ui/components';
+import { Background } from '@/once-ui/components/Background';
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 
@@ -62,15 +63,14 @@ export const Mailchimp = (
         <Flex
             style={{overflow: 'hidden'}}
             position="relative"
-            fillWidth padding="xl"  radius="l" marginBottom="m"
+            fillWidth padding="l"  radius="l" marginBottom="m"
             direction="column" alignItems="center" align="center"
             background="surface" border="neutral-medium" borderStyle="solid-1">
             <Background
                 position="absolute"
-                mask={mailchimp.effects.mask as any}
-                gradient={mailchimp.effects.gradient as any}
-                dots={mailchimp.effects.dots as any}
-                lines={mailchimp.effects.lines as any}/>
+                gradient={mailchimp.effects.gradient}
+                dots={mailchimp.effects.dots}
+                lines={mailchimp.effects.lines}/>
             <Heading style={{position: 'relative'}}
                 marginBottom="s"
                 variant="display-strong-xs">

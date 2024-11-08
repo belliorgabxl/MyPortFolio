@@ -80,7 +80,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             {images.length > 1 && (
                 <Flex
                     gap="4" paddingX="s"
-                    fillWidth
+                    fillWidth maxWidth={32}
                     justifyContent="center">
                     {images.map((_, index) => (
                         <Flex
@@ -101,14 +101,14 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             )}
             <Flex
                 mobileDirection="column"
-                fillWidth paddingX="s" paddingTop="12" paddingBottom="24" gap="l">
+                fillWidth paddingX="l" paddingTop="xs" paddingBottom="m" gap="l">
                 {title && (
                     <Flex
                         flex={5}>
                         <Heading
                             as="h2"
                             wrap="balance"
-                            variant="heading-strong-xl">
+                            variant="display-strong-xs">
                             {title}
                         </Heading>
                     </Flex>
@@ -116,7 +116,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                 {(avatars?.length > 0 || description?.trim() || content?.trim()) && (
                     <Flex
                         flex={7} direction="column"
-                        gap="16">
+                        gap="s">
                         {avatars?.length > 0 && (
                             <AvatarGroup
                                 avatars={avatars}
