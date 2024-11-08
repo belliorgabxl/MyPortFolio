@@ -34,12 +34,12 @@ const social = [
     {
         name: 'X',
         icon: 'x',
-        link: '',
+        link: 'gabxl_npk',
     },
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'patara1919@gmail.com',
     },
 ]
 
@@ -48,7 +48,7 @@ const home = {
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
     headline: <>Gabel Patarajarin 64011224</>,
-    subline: <>I'm Gabel, a telecom engineer at <InlineCode>KMITL</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own DOMAIN projects.</>
+    subline: <>I'm Gabel , Student Engineering at <InlineCode>KMITL</InlineCode> Faculty of Engineering Telecommunication ,<br/>  After hours, I build my own DOMAIN projects for <InlineCode>Network Programing</InlineCode> subject.</>
 }
 
 const about = {
@@ -76,12 +76,12 @@ const about = {
         title: 'Work Experience',
         experiences: [
             {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Telecom Engineer',
+                company: 'TCC',
+                timeframe: '01/03/2024 - Present',
+                role: 'Telecom Engineer & Developer',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>Being to Network Engineering and Web Developer in TCC technology.</>,
+                    <>And go to Back-Edn Developer management all information and database in enterprises.</>
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
@@ -93,9 +93,9 @@ const about = {
                 ]
             },
             {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
+                company: 'One Bangkok',
+                timeframe: '2024 - Present',
+                role: 'Full-Stacke Developer',
                 achievements: [
                     <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
                     <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
@@ -109,12 +109,12 @@ const about = {
         title: 'Studies',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
+                name: "King Mongkut 's Institute of Technology Ladkrabang",
+                description: <>Studied telecommunication engineering.</>,
             },
             {
                 name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                description: <>Chasing after dreams in Developed way</>,
             }
         ]
     },
@@ -123,11 +123,23 @@ const about = {
         title: 'Technical skills',
         skills: [
             {
+                title: 'Next.js',
+                description: <>Building next gen apps with Next.js + Once UI + MongoDB.</>,
+                images: [
+                    {
+                        src: '/images/projects/project-01/cover-04.jpg',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 9
+                    },
+                ]
+            },
+            {
                 title: 'Figma',
                 description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
                 images: [
                     {
-                        src: '/images/projects/project-01/cover-02.jpg',
+                        src: '/images/projects/project-01/cover-02.png',
                         alt: 'Project image',
                         width: 16,
                         height: 9
@@ -140,18 +152,7 @@ const about = {
                     },
                 ]
             },
-            {
-                title: 'Next.js',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-04.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
-            }
+            
         ]
     }
 }
@@ -166,7 +167,7 @@ const blog = {
 
 const work = {
     label: 'Work',
-    title: 'My projects',
+    title: 'My Job :)',
     description: `Design and dev projects by ${person.name}`
     // Create new project pages by adding a new .mdx file to app/blog/posts
     // All projects will be listed on the /home and /work routes

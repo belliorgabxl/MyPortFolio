@@ -16,10 +16,8 @@ interface WorkParams {
 
 export async function generateStaticParams() {
 	const locales = routing.locales;
-    
     // Create an array to store all posts from all locales
     const allPosts = [];
-
     // Fetch posts for each locale
     for (const locale of locales) {
         const posts = getPosts(['src', 'app', '[locale]', 'work', 'projects', locale]);
@@ -28,17 +26,14 @@ export async function generateStaticParams() {
             locale: locale,
         })));
     }
-
     return allPosts;
 }
 
 export function generateMetadata({ params: { slug, locale } }: WorkParams) {
 	let post = getPosts(['src', 'app', '[locale]', 'work', 'projects', locale]).find((post) => post.slug === slug)
-	
 	if (!post) {
 		return
 	}
-
 	let {
 		title,
 		publishedAt: publishedTime,
