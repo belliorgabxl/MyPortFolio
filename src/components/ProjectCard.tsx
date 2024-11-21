@@ -61,6 +61,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             <RevealFx
                     style={{width: '100%'}}
                     delay={0.4}
+                    
                     trigger={isTransitioning}
                     speed="fast">
                     <SmartImage
