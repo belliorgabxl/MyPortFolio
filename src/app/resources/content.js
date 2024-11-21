@@ -127,7 +127,7 @@ const about = {
                 description: <>Building next gen apps with Next.js + Once UI + MongoDB.</>,
                 images: [
                     {
-                        src: '/images/projects/project-01/cover-04.jpg',
+                        src: '/images/projects/project-01/cover-04.png',
                         alt: 'Project image',
                         width: 16,
                         height: 9
@@ -139,7 +139,7 @@ const about = {
                 description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
                 images: [
                     {
-                        src: '/images/projects/project-01/cover-02.png',
+                        src: '/images/projects/project-01/cover-02.jpg',
                         alt: 'Project image',
                         width: 16,
                         height: 9
