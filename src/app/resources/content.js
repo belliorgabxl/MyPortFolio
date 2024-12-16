@@ -2,7 +2,7 @@ import { InlineCode } from "@/once-ui/components";
 
 const person = {
     firstName: 'Patarajarin',
-    lastName:  '64011224',
+    lastName:  'Napakarn',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
@@ -47,7 +47,7 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Gabel Patarajarin 64011224</>,
+    headline: <>Gabel Patarajarin</>,
     subline: <>I'm Gabel , Student Engineering at <InlineCode>KMITL</InlineCode> Faculty of Engineering Telecommunication ,<br/>  After hours, I build my own DOMAIN projects for <InlineCode>Network Programing</InlineCode> subject.</>
 }
 
