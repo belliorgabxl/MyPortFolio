@@ -9,7 +9,7 @@ const person = {
     role:      'Telecommunication Engineer',
     avatar:    '/images/avatar.jpg',
     location:  'Asia/Bangkok',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    languages: ['Thai', 'English']  // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
@@ -24,12 +24,12 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        link: 'https://github.com/belliorgabxl/project_esp',
     },
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
+        link: 'https://www.linkedin.com/in/patarajarin-napakarn-565b41344/',
     },
     {
         name: 'X',
@@ -81,7 +81,7 @@ const about = {
                 role: 'Telecom Engineer & Developer',
                 achievements: [
                     <>Being to Network Engineering and Web Developer in TCC technology.</>,
-                    <>And go to Back-Edn Developer management all information and database in enterprises.</>
+                    <>And go to Back-End Developer (Go-lang , .NET) management all information and database in enterprises.</>
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
