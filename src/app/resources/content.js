@@ -48,7 +48,7 @@ const home = {
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
     headline: <>Gabel Patarajarin</>,
-    subline: <>I'm Gabel , Student Engineering at <InlineCode>KMITL</InlineCode> Faculty of Engineering Telecommunication ,<br/>  After hours, I build my own DOMAIN projects for <InlineCode>Network Programing</InlineCode> subject.</>
+    subline: <>I'm Gabel , Student Engineering at <InlineCode>KMITL</InlineCode> Faculty of Engineering Telecommunication <br/>Or Network Engineering , After that, I practiced as a <InlineCode>Web-Developer</InlineCode><br/>Both <InlineCode>Front-End</InlineCode> & <InlineCode>Back-End </InlineCode>  &nbsp;developer</>
 }
 
 const about = {
