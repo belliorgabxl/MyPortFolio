@@ -239,7 +239,67 @@ const createI18nContent = (t) => {
                 orientation: 'horizontal'
             },
             { 
-                src: '/images/gallery/img-14.jpg',
+                src: '/images/profile/image01.jpg',
+                alt: 'image',
+                orientation: 'horizontal'
+            },
+            { 
+                src: '/images/profile/image02.jpg',
+                alt: 'image',
+                orientation: 'horizontal'
+            },
+            { 
+                src: '/images/profile/image03.jpg',
+                alt: 'image',
+                orientation: 'horizontal'
+            },
+            { 
+                src: '/images/profile/image04.jpg',
+                alt: 'image',
+                orientation: 'horizontal'
+            },
+            { 
+                src: '/images/profile/image05.jpg',
+                alt: 'image',
+                orientation: 'horizontal'
+            },
+            { 
+                src: '/images/profile/image06.jpg',
+                alt: 'image',
+                orientation: 'horizontal'
+            },
+            { 
+                src: '/images/profile/image07.jpg',
+                alt: 'image',
+                orientation: 'horizontal'
+            },
+            { 
+                src: '/images/profile/image08.jpg',
+                alt: 'image',
+                orientation: 'horizontal'
+            },
+            { 
+                src: '/images/profile/image09.jpg',
+                alt: 'image',
+                orientation: 'horizontal'
+            },
+            { 
+                src: '/images/profile/image10.jpg',
+                alt: 'image',
+                orientation: 'horizontal'
+            },
+            { 
+                src: '/images/profile/image11.jpg',
+                alt: 'image',
+                orientation: 'horizontal'
+            },
+            { 
+                src: '/images/profile/image12.jpg',
+                alt: 'image',
+                orientation: 'horizontal'
+            },
+            { 
+                src: '/images/profile/image13.jpg',
                 alt: 'image',
                 orientation: 'horizontal'
             },
