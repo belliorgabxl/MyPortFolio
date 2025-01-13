@@ -79,3 +79,8 @@ transform: translateX(0px);
     background-color: rgb(86, 86, 247);
 }
 
+.productBox{
+    display: grid;
+    place-items: center;
+    gap: 20px;
+}

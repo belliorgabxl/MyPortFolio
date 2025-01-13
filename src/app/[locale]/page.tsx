@@ -64,7 +64,7 @@ export default function Home({
     <Flex
       maxWidth="m"
       fillWidth
-      gap="xl"
+      gap="l"
       direction="column"
       alignItems="center"
     >
@@ -199,14 +199,21 @@ export default function Home({
           </div>
         </div>
       </div>
-      <RevealFx translateY="16" delay={0.6}>
+      <RevealFx translateY="12" delay={0.6}>
         <Projects range={[1, 1]} locale={locale} />
       </RevealFx>
+
       {routes["/blog"] && (
         <Flex fillWidth paddingX="20">
           <Posts range={[1, 2]} columns="2" locale={locale} />
         </Flex>
       )}
+      <div className={styles.productBox}>
+        <a className="my-5" href="https://iot-telecom60.vercel.app/">
+          <h2>Click Here! to visit My Deploy products "Iot Platform project"</h2>
+        </a>
+        <img  className="my-5" src="/images/assets/iot-link.png" alt="iot-link" width={200} height={200}/>
+      </div>
       <Projects range={[2]} locale={locale} />
       {newsletter.display && <Mailchimp newsletter={newsletter} />}
     </Flex>
