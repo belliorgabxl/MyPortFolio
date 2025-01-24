@@ -97,8 +97,10 @@ const about = {
                 timeframe: '2024 - Present',
                 role: 'Full-Stacke Developer',
                 achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                    <>Being to Network Engineering and Web Developer in TCC technology.</>,
+                    <>And go to Back-End Developer (Go-lang , .NET) management all information and database in enterprises.</>,
+                    <>Being to Network Engineering and Web Developer in TCC technology.</>,
+                    <>And go to Back-End Developer (Go-lang , .NET) management all information and database in enterprises.</>
                 ],
                 images: [ ]
             }

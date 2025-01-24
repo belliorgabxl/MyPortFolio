@@ -25,12 +25,12 @@ const createI18nContent = (t) => {
         {
             name: 'GitHub',
             icon: 'github',
-            link: 'https://github.com/belliorgabxl/project_esp',
+            link: 'https://github.com/belliorgabxl',
         },
         {
             name: 'LinkedIn',
             icon: 'linkedin',
-            link: 'https://github.com/belliorgabxl/project_esp',
+            link: 'linkedin.com/in/patarajarin-napakarn-565b41344',
         },
         {
             name: 'X',
