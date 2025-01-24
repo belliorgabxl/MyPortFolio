@@ -131,38 +131,8 @@ const about = {
         display: true, // set to false to hide this section
         title: 'Technical skills',
         skills: [
-            // {
-            //     title: 'Next.js',
-            //     description: <>Building next gen apps with Next.js + Once UI + MongoDB.</>,
-            //     images: [
-            //         {
-            //             src: '/images/assets/nextjs.jpeg',
-            //             alt: 'Project image',
-            //             width: 16,
-            //             height: 9
-            //         },
-            //     ]
-            // },
-            // {
-            //     title: 'React',
-            //     description: <>Building Website with React 3 Project</>,
-            //     images: [
-            //         {
-            //             src: '/images/assets/react.png',
-            //             alt: 'Project image',
-            //             width: 16,
-            //             height: 9
-            //         },
-            //     ]
-            // },
-        ]
-    },
-    tools :{
-        display: true, 
-        title: 'Expert Tools',
-        tool:[
             {
-                tooler: 'Next.js',
+                title: 'Next.js',
                 description: <>Building next gen apps with Next.js + Once UI + MongoDB.</>,
                 images: [
                     {
@@ -174,7 +144,7 @@ const about = {
                 ]
             },
             {
-                tooler: 'React',
+                title: 'React',
                 description: <>Building Website with React 3 Project</>,
                 images: [
                     {
@@ -185,6 +155,36 @@ const about = {
                     },
                 ]
             },
+            {
+                title: '.NET Core Back-End',
+                description: <>Experience for .NET Core 1 Year in TCC tech group</>,
+                images: [
+                    {
+                        src: '/images/assets/dotnet.png',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 9
+                    },
+                ]
+            },
+            {
+                title: 'Go-lang Back-End',
+                description: <>Experience for Go-lang 6 Month in TCC tech group</>,
+                images: [
+                    {
+                        src: '/images/assets/golang.png',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 9
+                    },
+                ]
+            },
+        ]
+    },
+    tools :{
+        display: true, 
+        title: 'Expert Tools',
+        tool:[
             {
                 tooler: 'Docker',
                 description: <>Virtual Machine & Compose & Docker Script and other</>,
