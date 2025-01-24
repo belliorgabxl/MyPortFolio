@@ -104,7 +104,7 @@ const createI18nContent = (t) => {
             title: 'Studies',
             institutions: [
                 {
-                    name: 'University of Jakarta',
+                    name: 'King Mongkuts instuitute of technology Ladkrabung',
                     description: <>{t(`about.studies.institutions.University of Jakarta.description`)}</>,
                 },
                 {
@@ -115,10 +115,10 @@ const createI18nContent = (t) => {
         },
         technical: {
             display: true, // set to false to hide this section
-            title: t("about.technical.title"),
+            title: "Technical Skill",
             skills: [
                 {
-                    title: 'Figma',
+                    title: 'Python',
                     description: <>{t("about.technical.skills.Figma.description")}</>,
                     images: [
                         {
@@ -136,8 +136,46 @@ const createI18nContent = (t) => {
                     ]
                 },
                 {
-                    title: 'Next.js',
+                    title: 'SQL',
                     description: <>{t("about.technical.skills.Nextjs.description")}</>, // "." not accepted in next-intl namespace
+                    images: [
+                        {
+                            src: '/images/projects/project-01/cover-04.jpg',
+                            alt: 'Project image',
+                            width: 16,
+                            height: 9
+                        },
+                    ]
+                }
+            ]
+        }
+
+        ,
+        tools :{
+            display: true,
+            title: "Tools",
+            tool: [
+                {
+                    tooler: "Figma",
+                    description: <>{t("about.tools.tool.Figma.description")}</>,
+                    images: [
+                        {
+                            src: '/images/projects/project-01/cover-02.jpg',
+                            alt: 'Project image',
+                            width: 16,
+                            height: 9
+                        },
+                        {
+                            src: '/images/projects/project-01/cover-03.jpg',
+                            alt: 'Project image',
+                            width: 16,
+                            height: 9
+                        },
+                    ]
+                },
+                {
+                    tooler: "Nextjs",
+                    description: <>{t("about.tools.tool.Nextjs.description")}</>, // "." not accepted in next-intl namespace
                     images: [
                         {
                             src: '/images/projects/project-01/cover-04.jpg',

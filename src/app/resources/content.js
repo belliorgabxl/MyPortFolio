@@ -102,7 +102,14 @@ const about = {
                     <>Being to Network Engineering and Web Developer in TCC technology.</>,
                     <>And go to Back-End Developer (Go-lang , .NET) management all information and database in enterprises.</>
                 ],
-                images: [ ]
+                images: [
+                    {
+                        src: '/images/projects/project-01/image-02.jpg',
+                        alt: 'Once UI Project',
+                        width: 16,
+                        height: 9
+                    }
+                 ]
             }
         ]
     },
@@ -124,12 +131,42 @@ const about = {
         display: true, // set to false to hide this section
         title: 'Technical skills',
         skills: [
+            // {
+            //     title: 'Next.js',
+            //     description: <>Building next gen apps with Next.js + Once UI + MongoDB.</>,
+            //     images: [
+            //         {
+            //             src: '/images/assets/nextjs.jpeg',
+            //             alt: 'Project image',
+            //             width: 16,
+            //             height: 9
+            //         },
+            //     ]
+            // },
+            // {
+            //     title: 'React',
+            //     description: <>Building Website with React 3 Project</>,
+            //     images: [
+            //         {
+            //             src: '/images/assets/react.png',
+            //             alt: 'Project image',
+            //             width: 16,
+            //             height: 9
+            //         },
+            //     ]
+            // },
+        ]
+    },
+    tools :{
+        display: true, 
+        title: 'Expert Tools',
+        tool:[
             {
-                title: 'Next.js',
+                tooler: 'Next.js',
                 description: <>Building next gen apps with Next.js + Once UI + MongoDB.</>,
                 images: [
                     {
-                        src: '/images/projects/project-01/cover-04.png',
+                        src: '/images/assets/nextjs.jpeg',
                         alt: 'Project image',
                         width: 16,
                         height: 9
@@ -137,24 +174,47 @@ const about = {
                 ]
             },
             {
-                title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+                tooler: 'React',
+                description: <>Building Website with React 3 Project</>,
                 images: [
                     {
-                        src: '/images/projects/project-01/cover-02.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                    {
-                        src: '/images/projects/project-01/cover-03.jpg',
+                        src: '/images/assets/react.png',
                         alt: 'Project image',
                         width: 16,
                         height: 9
                     },
                 ]
             },
-            
+            {
+                tooler: 'Docker',
+                description: <>Virtual Machine & Compose & Docker Script and other</>,
+                images: [
+                    {
+                        src: '/images/assets/docker_image.jpg',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 9
+                    },
+                ]
+            },
+            {
+                tooler: 'Figma',
+                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+                images: [
+                    {
+                        src: '/images/assets/figma.jpg',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/project-02/figma01.png',
+                        alt: 'Project image',
+                        width: 16,
+                        height: 9
+                    },
+                ]
+            },
         ]
     }
 }
@@ -163,8 +223,7 @@ const blog = {
     label: 'Blog',
     title: 'Writing about design and tech...',
     description: `Read what ${person.name} has been up to recently`
-    // Create new blog posts by adding a new .mdx file to app/blog/posts
-    // All posts will be listed on the /blog route
+
 }
 
 const work = {

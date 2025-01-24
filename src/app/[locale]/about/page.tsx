@@ -65,6 +65,11 @@ export default function About(
             display: about.technical.display,
             items: about.technical.skills.map(skill => skill.title)
         },
+        {
+            title: about.tools.title,
+            display: about.tools.display,
+            items: about.tools.tool.map(item => item.tooler)
+        },
     ]
     return (
         <Flex
@@ -326,7 +331,8 @@ export default function About(
                             <Heading
                                 as="h2"
                                 id={about.technical.title}
-                                variant="display-strong-s" marginBottom="40">
+                                variant="display-strong-s" 
+                                marginBottom="m">
                                 {about.technical.title}
                             </Heading>
                             <Flex
@@ -338,6 +344,7 @@ export default function About(
                                         fillWidth gap="4"
                                         direction="column">
                                         <Text
+                                            id={skill.title}
                                             variant="heading-strong-l">
                                             {skill.title}
                                         </Text>
@@ -351,6 +358,58 @@ export default function About(
                                                 fillWidth paddingTop="m" gap="12"
                                                 wrap>
                                                 {skill.images.map((image, index) => (
+                                                    <Flex
+                                                        key={index}
+                                                        border="neutral-medium"
+                                                        borderStyle="solid-1"
+                                                        radius="m"
+                                                        minWidth={image.width} height={image.height}>
+                                                        <SmartImage
+                                                            enlarge
+                                                            radius="m"
+                                                            sizes={image.width.toString()}
+                                                            alt={image.alt}
+                                                            src={image.src}/>
+                                                    </Flex>
+                                                ))}
+                                            </Flex>
+                                        )}
+                                    </Flex>
+                                ))}
+                            </Flex>
+                        </>
+                    )}
+                    { about.tools.display && (
+                        <>
+                            <Heading
+                                as="h2"
+                                id={about.tools.title}
+                                variant="display-strong-s" marginBottom="40">
+                                {about.tools.title}
+                            </Heading>
+                            <Flex
+                                direction="column"
+                                fillWidth gap="l">
+                                {about.tools.tool.map((tool, index) => (
+                                    <Flex
+                                        key={`${tool.tooler}-${index}`}
+                                        fillWidth gap="4"
+                                        direction="column">
+                                        <Text
+                                            id={tool.tooler}
+                                            variant="heading-strong-l">
+                                            {tool.tooler}
+                                        </Text>
+                                        <Text
+                                            variant="body-default-m"
+                                            onBackground="neutral-weak">
+                                            {tool.description}
+                                        </Text>
+                                        {tool.images.length > 0 && (
+                                            <Flex
+                                                fillWidth paddingTop="m" gap="12"
+                                                wrap>
+                                                {tool.images.map((image, index) => (
                                                     <Flex
                                                         key={index}
                                                         border="neutral-medium"
