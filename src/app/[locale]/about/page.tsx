@@ -382,9 +382,10 @@ export default function About(
                     { about.tools.display && (
                         <>
                             <Heading
+                            paddingTop='xl'
                                 as="h2"
                                 id={about.tools.title}
-                                variant="display-strong-s" marginBottom="40">
+                                variant="display-strong-s" marginBottom="20">
                                 {about.tools.title}
                             </Heading>
                             <Flex

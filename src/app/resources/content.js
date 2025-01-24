@@ -85,11 +85,29 @@ const about = {
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
-                        src: '/images/projects/project-01/cover-01.jpg',
+                        src: '/images/profile/image14.jpg',
                         alt: 'Once UI Project',
                         width: 16,
                         height: 9
-                    }
+                    },
+                    {
+                        src: '/images/projects/project-01/cover-04.png',
+                        alt: 'Once UI Project',
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/projects/project-01/image-03.jpg',
+                        alt: 'Once UI Project',
+                        width: 16,
+                        height: 9
+                    },
+                    {
+                        src: '/images/gallery/img-01.jpg',
+                        alt: 'Once UI Project',
+                        width: 16,
+                        height: 9
+                    },
                 ]
             },
             {
@@ -107,7 +125,7 @@ const about = {
                         src: '/images/projects/project-01/image-02.jpg',
                         alt: 'Once UI Project',
                         width: 16,
-                        height: 9
+                        height: 16
                     }
                  ]
             }
@@ -174,7 +192,25 @@ const about = {
                     {
                         src: '/images/assets/golang.png',
                         alt: 'Project image',
+                        width: 20,
+                        height: 9
+                    },
+                    {
+                        src: '/images/assets/fiber.png',
+                        alt: 'Project image',
                         width: 16,
+                        height: 9
+                    },
+                ]
+            },
+            {
+                title: 'CQRS Architecture',
+                description: <>Command Query Responsibility Segregation (CQRS) is a design pattern that i usually use for project</>,
+                images: [
+                    {
+                        src: '/images/assets/cqrs.png',
+                        alt: 'CQRS',
+                        width: 20,
                         height: 9
                     },
                 ]
@@ -183,7 +219,7 @@ const about = {
     },
     tools :{
         display: true, 
-        title: 'Expert Tools',
+        title: 'Expert Tools For Developer',
         tool:[
             {
                 tooler: 'Docker',
@@ -210,6 +246,30 @@ const about = {
                     {
                         src: '/images/projects/project-02/figma01.png',
                         alt: 'Project image',
+                        width: 16,
+                        height: 9
+                    },
+                ]
+            },
+            {
+                tooler: 'Postman',
+                description: <>API test with  postman tools. experiences 2 year</>,
+                images: [
+                    {
+                        src: '/images/assets/postman.png',
+                        alt: 'postman',
+                        width: 16,
+                        height: 9
+                    },
+                ]
+            },
+            {
+                tooler: 'DBeaver',
+                description: <>Database management so good by DBeaver</>,
+                images: [
+                    {
+                        src: '/images/assets/dbeaver.jpg',
+                        alt: 'Dbeaver',
                         width: 16,
                         height: 9
                     },
