@@ -24,7 +24,7 @@ const social = [
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/belliorgabxl/project_esp',
+        link: 'https://github.com/belliorgabxl',
     },
     {
         name: 'LinkedIn',
