@@ -84,7 +84,7 @@ const createI18nContent = (t) => {
                     images: [ // optional: leave the array empty if you don't want to display images
                         {
                             src: '/images/projects/project-01/cover-01.jpg',
-                            alt: 'Once UI Project',
+                            alt: 'My Project',
                             width: 16,
                             height: 9
                         }

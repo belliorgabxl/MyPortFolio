@@ -86,27 +86,27 @@ const about = {
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
                         src: '/images/profile/image14.jpg',
-                        alt: 'Once UI Project',
+                        alt: 'My Project',
                         width: 16,
-                        height: 9
+                        height: 12
                     },
                     {
                         src: '/images/projects/project-01/cover-04.png',
-                        alt: 'Once UI Project',
+                        alt: 'My Project',
                         width: 16,
-                        height: 9
+                        height: 12
                     },
                     {
                         src: '/images/projects/project-01/image-03.jpg',
-                        alt: 'Once UI Project',
+                        alt: 'My Project',
                         width: 16,
-                        height: 9
+                        height: 12
                     },
                     {
                         src: '/images/gallery/img-01.jpg',
-                        alt: 'Once UI Project',
+                        alt: 'My Project',
                         width: 16,
-                        height: 9
+                        height: 12
                     },
                 ]
             },
@@ -123,7 +123,13 @@ const about = {
                 images: [
                     {
                         src: '/images/projects/project-01/image-02.jpg',
-                        alt: 'Once UI Project',
+                        alt: 'TCC Project',
+                        width: 16,
+                        height: 16
+                    },
+                    {
+                        src: '/images/profile/image15.jpg',
+                        alt: 'TCC project',
                         width: 16,
                         height: 16
                     }
@@ -209,6 +215,30 @@ const about = {
                 images: [
                     {
                         src: '/images/assets/cqrs.png',
+                        alt: 'CQRS',
+                        width: 20,
+                        height: 9
+                    },
+                ]
+            },
+            {
+                title: 'Grafana',
+                description: <>Log-Monitoring for API</>,
+                images: [
+                    {
+                        src: '/images/assets/grafana.png',
+                        alt: 'CQRS',
+                        width: 20,
+                        height: 9
+                    },
+                ]
+            },
+            {
+                title: 'Elastic-Search',
+                description: <>Search-Engine for Website & Database index search</>,
+                images: [
+                    {
+                        src: '/images/assets/elasticsearch.png',
                         alt: 'CQRS',
                         width: 20,
                         height: 9
