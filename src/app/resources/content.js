@@ -341,7 +341,7 @@ const gallery = {
             orientation: 'horizontal'
         },
         { 
-            src: '/images/gallery/img-03.jpg', 
+            src: '/images/gallery/img-05.jpg', 
             alt: 'image',
             orientation: 'vertical'
         },
@@ -351,7 +351,7 @@ const gallery = {
             orientation: 'horizontal'
         },
         { 
-            src: '/images/gallery/img-05.jpg', 
+            src: '/images/gallery/img-03.jpg', 
             alt: 'image',
             orientation: 'horizontal'
         },
@@ -438,7 +438,7 @@ const gallery = {
         { 
             src: '/images/profile/image10.jpg',
             alt: 'image',
-            orientation: 'horizontal'
+            orientation: 'horizontal',
         },
         { 
             src: '/images/profile/image11.jpg',

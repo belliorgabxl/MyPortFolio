@@ -30,7 +30,7 @@ export const Footer = () => {
                     </Text>
                     <Text onBackground="neutral-weak">
                         {/* Usage of this template requires attribution. Please don't remove the link to Once UI. */}
-                        / Build your portfolio with <SmartLink style={{marginLeft: '-0.125rem'}} href="https://github.com/belliorgabxl/MyPortFolio.git">Gabel UI</SmartLink>
+                        / Follow My Project <SmartLink style={{marginLeft: '-0.125rem'}} href="https://github.com/belliorgabxl">Gabel GitHub</SmartLink>
                     </Text>
                 </Text>
                 <Flex
