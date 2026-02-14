@@ -48,7 +48,26 @@ const home = {
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
     headline: <>Gabel Patarajarin</>,
-    subline: <>I'm Gabel , Student Engineering at <InlineCode>KMITL</InlineCode> Faculty of Engineering Telecommunication <br/>Or Network Engineering , After that, I practiced as a <InlineCode>Web-Developer</InlineCode><br/>Both <InlineCode>Front-End</InlineCode> & <InlineCode>Back-End </InlineCode>  &nbsp;developer</>
+   subline: (
+  <>
+    I'm Gabel — a <InlineCode>Full-Stack Developer</InlineCode> &{" "}
+    <InlineCode>Software Engineer</InlineCode>. <br />
+    I study Telecommunication / Network Engineering at{" "}
+    <InlineCode>KMITL</InlineCode>, Faculty of Engineering. <br />
+    I build and operate <InlineCode>end-to-end</InlineCode> software products —
+    from system design and{" "} <br/>
+    API engineering to{" "}
+    cloud-native deployment. <br />
+    I led development for a{" "}
+    <InlineCode>loyalty platform </InlineCode> serving{" "}
+    <InlineCode>1.5M+ users</InlineCode>,<br/> including secure point-transfer
+    integrations with major partners, and I maintain production systems with a
+    strong focus on <InlineCode>reliability</InlineCode>,{" "}
+    <InlineCode>security</InlineCode>, and <InlineCode>scalability</InlineCode>.
+  </>
+)
+
+
 }
 
 const about = {
